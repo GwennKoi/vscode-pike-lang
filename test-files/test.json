@@ -1,8 +1,0 @@
-//- Test comment
-
-{ "one"   : "two",
-  "three" : #"one long sentence\n
-            that stretches over multiple
-            lines so to speak",
-  "five"  : "One line that "         \
-            "continues on the next" }

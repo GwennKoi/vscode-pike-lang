@@ -1,7 +1,0 @@
-*~
-*.cache
-*.sublime-project
-*.sublime-workspace
-*.debug
-debug/
-tmp/
