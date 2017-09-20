@@ -1,4 +1,4 @@
-# Pike language extension
+# VS Code Pike language extension 
 
 Pike programming language syntax highlighting.
 
