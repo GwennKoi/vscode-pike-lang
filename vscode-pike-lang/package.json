@@ -1,0 +1,26 @@
+{
+    "name": "vscode-pike-lang",
+    "displayName": "Pike Language",
+    "description": "Pike Language syntax highlighting",
+    "version": "0.0.1",
+    "publisher": "undeadfish",
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pike",
+            "aliases": ["Pike", "pike"],
+            "extensions": [".pike",".pmod",".cmod"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pike",
+            "scopeName": "source.pike",
+            "path": "./syntaxes/Pike.tmLanguage"
+        }]
+    }
+}
