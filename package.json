@@ -1,26 +1,36 @@
 {
-    "name": "vscode-pike-lang",
-    "displayName": "Pike Language",
-    "description": "Pike Language syntax highlighting",
-    "version": "0.0.1",
-    "publisher": "undeadfish",
-    "engines": {
-        "vscode": "^1.16.0"
-    },
-    "categories": [
-        "Languages"
+  "name": "vscode-pike-lang",
+  "displayName": "Pike Language",
+  "description": "Pike Language syntax highlighting",
+  "version": "0.0.2",
+  "publisher": "undeadfish",
+  "engines": {
+    "vscode": "^1.16.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "pike",
+        "aliases": [ "Pike", "pike" ],
+        "extensions": [ ".pike", ".pmod" ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "pike",
-            "aliases": ["Pike", "pike"],
-            "extensions": [".pike",".pmod",".cmod"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "pike",
-            "scopeName": "source.pike",
-            "path": "./syntaxes/Pike.tmLanguage"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "pike",
+        "scopeName": "source.pike",
+        "path": "./syntaxes/Pike.tmLanguage"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "pike",
+        "path": "./snippets/pike.json"
+      }
+    ]
+  }
 }
