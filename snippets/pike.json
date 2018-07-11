@@ -209,6 +209,1284 @@
     }
   },
   {
+    "listxattr": {
+      "prefix": "listxattr",
+      "body": "listxattr(${1:string file}${2:, ${3:void|bool symlink}})"
+    }
+  },
+  {
+    "stringp": {
+      "prefix": "stringp",
+      "body": "stringp(${1:mixed arg})"
+    }
+  },
+  {
+    "getgrnam": {
+      "prefix": "getgrnam",
+      "body": "getgrnam(${1:string str})"
+    }
+  },
+  {
+    "atexit": {
+      "prefix": "atexit",
+      "body": "atexit(${1:function(:void) callback})"
+    }
+  },
+  {
+    "random_seed": {
+      "prefix": "random_seed",
+      "body": "random_seed(${1:int seed})"
+    }
+  },
+  {
+    "describe_error": {
+      "prefix": "describe_error",
+      "body": "describe_error(${1:mixed err})"
+    }
+  },
+  {
+    "exit": {
+      "prefix": "exit",
+      "body": "exit(${1:int returncode}${2:, void|string fmt}${3:, mixed ... extra})"
+    }
+  },
+  {
+    "Stdio.write_file": {
+      "prefix": "Stdio.write_file",
+      "body": "Stdio.write_file(${1:string filename}, ${2:string content})"
+    }
+  },
+  {
+    "sizeof": {
+      "prefix": "sizeof",
+      "body": "sizeof(${1:mixed args})"
+    }
+  },
+  {
+    "cleargroups": {
+      "prefix": "cleargroups",
+      "body": "cleargroups"
+    }
+  },
+  {
+    "log": {
+      "prefix": "log",
+      "body": "log(${1:int|float f})"
+    }
+  },
+  {
+    "function_object": {
+      "prefix": "function_object",
+      "body": "function_object(${1:function(:void) f})"
+    }
+  },
+  {
+    "ctime": {
+      "prefix": "ctime",
+      "body": "ctime(${1:int timestamp})"
+    }
+  },
+  {
+    "aggregate": {
+      "prefix": "aggregate",
+      "body": "aggregate(${1:mixed ... elements})"
+    }
+  },
+  {
+    "getsid": {
+      "prefix": "getsid",
+      "body": "getsid(${1:int|void pid})"
+    }
+  },
+  {
+    "decode_value": {
+      "prefix": "decode_value",
+      "body": "decode_value(${1:string coded_value}${2:, void|Codec codec})"
+    }
+  },
+  {
+    "all_threads": {
+      "prefix": "all_threads",
+      "body": "all_threads()"
+    }
+  },
+  {
+    "zero_type": {
+      "prefix": "zero_type",
+      "body": "zero_type(${1:mixed val})"
+    }
+  },
+  {
+    "sscanf": {
+      "prefix": "sscanf",
+      "body": "sscanf(${1:string data}, ${2:string format}, ${3:mixed ... lvalues})"
+    }
+  },
+  {
+    "mv": {
+      "prefix": "mv",
+      "body": "mv(${1:string from}, ${2:string to})"
+    }
+  },
+  {
+    "hash_value": {
+      "prefix": "hash_value",
+      "body": "hash_value(${1:mixed value})"
+    }
+  },
+  {
+    "final": {
+      "prefix": "final",
+      "body": "final ${1}"
+    }
+  },
+  {
+    "Parser.HTML": {
+      "prefix": "Parser.HTML",
+      "body": "Parser.HTML"
+    }
+  },
+  {
+    "int2char": {
+      "prefix": "int2char",
+      "body": "int2char(${1:int n})"
+    }
+  },
+  {
+    "combine_path_unix": {
+      "prefix": "combine_path_unix",
+      "body": "combine_path_unix(${1:string path}, ${2:string ... paths})"
+    }
+  },
+  {
+    "__REAL_MINOR__": {
+      "prefix": "__REAL_MINOR__",
+      "body": "__REAL_MINOR__"
+    }
+  },
+  {
+    "has_index": {
+      "prefix": "has_index",
+      "body": "has_index(${1:mixed haystack}, ${2:mixed needle})"
+    }
+  },
+  {
+    "error": {
+      "prefix": "error",
+      "body": "error(${1:sprintf_format f}, ${2:sprintf_args ... args})"
+    }
+  },
+  {
+    "__DATE__": {
+      "prefix": "__DATE__",
+      "body": "__DATE__"
+    }
+  },
+  {
+    "mktime": {
+      "prefix": "mktime",
+      "body": "mktime(${1:mapping(string:int)|int tm_or_sec}, ${2:int min}, ${3:int hour}, ${4:int mday}, ${5:int mon}, ${6:int year}${7:, int|void isdst}${8:, int|void tz})"
+    }
+  },
+  {
+    "min": {
+      "prefix": "min",
+      "body": "min(${1:mixed args}${2:, ${3:mixed more}})"
+    }
+  },
+  {
+    "basename": {
+      "prefix": "basename",
+      "body": "basename(${1:string path})"
+    }
+  },
+  {
+    "getgrgid": {
+      "prefix": "getgrgid",
+      "body": "getgrgid(${1:int gid})"
+    }
+  },
+  {
+    "local": {
+      "prefix": "local",
+      "body": "local ${1}"
+    }
+  },
+  {
+    "mappingp": {
+      "prefix": "mappingp",
+      "body": "mappingp(${1:mixed val})"
+    }
+  },
+  {
+    "access": {
+      "prefix": "access",
+      "body": "access(${1:string path}, ${2:string|void mode})"
+    }
+  },
+  {
+    "__TIME__": {
+      "prefix": "__TIME__",
+      "body": "__TIME__"
+    }
+  },
+  {
+    "__REAL_BUILD__": {
+      "prefix": "__REAL_BUILD__",
+      "body": "__REAL_BUILD__"
+    }
+  },
+  {
+    "query_num_arg": {
+      "prefix": "query_num_arg",
+      "body": "query_num_arg()"
+    }
+  },
+  {
+    "__VERSION__": {
+      "prefix": "__VERSION__",
+      "body": "__VERSION__"
+    }
+  },
+  {
+    "function_name": {
+      "prefix": "function_name",
+      "body": "function_name(${1:function(:void)|program f})"
+    }
+  },
+  {
+    "call_out": {
+      "prefix": "call_out",
+      "body": "call_out(${1:function f}, ${2:float|int delay}, ${3:void|mixed ... args});"
+    }
+  },
+  {
+    "atanh": {
+      "prefix": "atanh",
+      "body": "atanh(${1:int|float f})"
+    }
+  },
+  {
+    "Stdio.read_file": {
+      "prefix": "Stdio.read_file",
+      "body": "Stdio.read_file(${1:string filename})"
+    }
+  },
+  {
+    "string_to_utf8": {
+      "prefix": "string_to_utf8",
+      "body": "string_to_utf8(${1:string str})"
+    }
+  },
+  {
+    "initgroups": {
+      "prefix": "initgroups",
+      "body": "initgroups"
+    }
+  },
+  {
+    "Standards.JSON.decode": {
+      "prefix": "Standards.JSON.decode",
+      "body": "Standards.JSON.decode(${1:string data})"
+    }
+  },
+  {
+    "object_variablep": {
+      "prefix": "object_variablep",
+      "body": "object_variablep(${1:object o}, ${2:string var})"
+    }
+  },
+  {
+    "bool": {
+      "prefix": "bool",
+      "body": "bool"
+    }
+  },
+  {
+    "mkmapping": {
+      "prefix": "mkmapping",
+      "body": "mkmapping(${1:array ind}, ${2:array val})"
+    }
+  },
+  {
+    "add_constant": {
+      "prefix": "add_constant",
+      "body": "add_constant(${1:string name}, ${2:mixed value})"
+    }
+  },
+  {
+    "mkdir": {
+      "prefix": "mkdir",
+      "body": "mkdir(${1:string dirname}${2:, ${3:void|int mode}})"
+    }
+  },
+  {
+    "array_sscanf": {
+      "prefix": "array_sscanf",
+      "body": "array_sscanf(${1:string data}, ${2:string format})"
+    }
+  },
+  {
+    "Parser.XML.Tree": {
+      "prefix": "Parser.XML.Tree",
+      "body": "Parser.XML.Tree"
+    }
+  },
+  {
+    "has_suffix": {
+      "prefix": "has_suffix",
+      "body": "has_suffix(${1:string s}, ${2:string suffix})"
+    }
+  },
+  {
+    "combine_path_amigaos": {
+      "prefix": "combine_path_amigaos",
+      "body": "combine_path_amigaos(${1:string path}, ${2:string ... paths})"
+    }
+  },
+  {
+    "basetype": {
+      "prefix": "basetype",
+      "body": "basetype(${1:mixed value})"
+    }
+  },
+  {
+    "__REAL_VERSION__": {
+      "prefix": "__REAL_VERSION__",
+      "body": "__REAL_VERSION__"
+    }
+  },
+  {
+    "hardlink": {
+      "prefix": "hardlink",
+      "body": "hardlink(${1:string from}, ${2:string to})"
+    }
+  },
+  {
+    "dirname": {
+      "prefix": "dirname",
+      "body": "dirname(${1:string path})"
+    }
+  },
+  {
+    "abs": {
+      "prefix": "abs",
+      "body": "abs(${1:float|int|object arg})"
+    }
+  },
+  {
+    "atan": {
+      "prefix": "atan",
+      "body": "atan(${1:int|float f1}, ${2:int|float f2})"
+    }
+  },
+  {
+    "map": {
+      "prefix": "map",
+      "body": "map(${1:mixed arr}, ${2:void|mixed fun}${3:, ${4:mixed ... extra}})"
+    }
+  },
+  {
+    "getuid": {
+      "prefix": "getuid",
+      "body": "getuid()"
+    }
+  },
+  {
+    "programp": {
+      "prefix": "programp",
+      "body": "programp(${1:mixed arg})"
+    }
+  },
+  {
+    "__BUILD__": {
+      "prefix": "__BUILD__",
+      "body": "__BUILD__"
+    }
+  },
+  {
+    "pow": {
+      "prefix": "pow",
+      "body": "pow(${1:float|int|object n}, ${2:float|int|object x})"
+    }
+  },
+  {
+    "equal": {
+      "prefix": "equal",
+      "body": "equal(${1:mixed a}, ${2:mixed b})"
+    }
+  },
+  {
+    "lower_case": {
+      "prefix": "lower_case",
+      "body": "lower_case(${1:string|int string_or_char})"
+    }
+  },
+  {
+    "file_truncate": {
+      "prefix": "file_truncate",
+      "body": "file_truncate(${1:string file}, ${2:int length})"
+    }
+  },
+  {
+    "compile": {
+      "prefix": "compile",
+      "body": "compile(${1:string source}, ${2:CompilationHandler|void handler}, ${3:int|void major}, ${4:int|void minor}, ${5:program|void target}, ${6:object|void placeholder})"
+    }
+  },
+  {
+    "protected": {
+      "prefix": "protected",
+      "body": "protected ${1}"
+    }
+  },
+  {
+    "getpwnam": {
+      "prefix": "getpwnam",
+      "body": "getpwnam(${1:string str})"
+    }
+  },
+  {
+    "variant": {
+      "prefix": "variant",
+      "body": "variant ${1}"
+    }
+  },
+  {
+    "aggregate_mapping": {
+      "prefix": "aggregate_mapping",
+      "body": "aggregate_mapping(${1:mixed ... elements})"
+    }
+  },
+  {
+    "Standards.JSON.encode": {
+      "prefix": "Standards.JSON.encode",
+      "body": "Standards.JSON.encode(${1:mixed data})"
+    }
+  },
+  {
+    "getgroups": {
+      "prefix": "getgroups",
+      "body": "getgroups()"
+    }
+  },
+  {
+    "backtrace": {
+      "prefix": "backtrace",
+      "body": "backtrace()"
+    }
+  },
+  {
+    "arrayp": {
+      "prefix": "arrayp",
+      "body": "arrayp(${1:mixed ... arg})"
+    }
+  },
+  {
+    "__DIR__": {
+      "prefix": "__DIR__",
+      "body": "__DIR__"
+    }
+  },
+  {
+    "has_prefix": {
+      "prefix": "has_prefix",
+      "body": "has_prefix(${1:string|object s}, ${2:string prefix})"
+    }
+  },
+  {
+    "gethostbyaddr": {
+      "prefix": "gethostbyaddr",
+      "body": "gethostbyaddr(${1:string addr})"
+    }
+  },
+  {
+    "fork": {
+      "prefix": "fork",
+      "body": "fork()"
+    }
+  },
+  {
+    "getgid": {
+      "prefix": "getgid",
+      "body": "getgid()"
+    }
+  },
+  {
+    "filter": {
+      "prefix": "filter",
+      "body": "filter(${1:mixed arr}${2:, void|mixed fun}${3:, mixed ... extra})"
+    }
+  },
+  {
+    "werror": {
+      "prefix": "werror",
+      "body": "werror(\"${1:format}\\n\"${2:, ${3:mixed ... args}});"
+    }
+  },
+  {
+    "cos": {
+      "prefix": "cos",
+      "body": "cos(${1:int|float f})"
+    }
+  },
+  {
+    "add_module_path": {
+      "prefix": "add_module_path",
+      "body": "add_module_path(${1:string tmp})"
+    }
+  },
+  {
+    "limit": {
+      "prefix": "limit",
+      "body": "limit(${1:int|float|object minval}, ${2:int|float|object x}, ${3:int|float|object maxval})"
+    }
+  },
+  {
+    "gethrvtime": {
+      "prefix": "gethrvtime",
+      "body": "gethrvtime(${1:void|int nsec})"
+    }
+  },
+  {
+    "compile_string": {
+      "prefix": "compile_string",
+      "body": "compile_string(${1:string source}, ${2:void|string filename}, ${3:object|void handler}, ${4:void|program p}, ${5:void|object o}, ${6:void|int _show_if_constant_errors})"
+    }
+  },
+  {
+    "objectp": {
+      "prefix": "objectp",
+      "body": "objectp(${1:mixed arg})"
+    }
+  },
+  {
+    "load_module": {
+      "prefix": "load_module",
+      "body": "load_module(${1:string module_name})"
+    }
+  },
+  {
+    "getpwuid": {
+      "prefix": "getpwuid",
+      "body": "getpwuid(${1:int uid})"
+    }
+  },
+  {
+    "multisetp": {
+      "prefix": "multisetp",
+      "body": "multisetp(${1:mixed val})"
+    }
+  },
+  {
+    "file_stat": {
+      "prefix": "file_stat",
+      "body": "file_stat(${1:string path}${2:, void|bool symlink})"
+    }
+  },
+  {
+    "TRACE": {
+      "prefix": "TRACE",
+      "body": "TRACE(\"${1:format}\\n\", ${2:mixed ... args})"
+    }
+  },
+  {
+    "__REAL_MAJOR__": {
+      "prefix": "__REAL_MAJOR__",
+      "body": "__REAL_MAJOR__"
+    }
+  },
+  {
+    "aggregate_multiset": {
+      "prefix": "aggregate_multiset",
+      "body": "aggregate_multiset(${1:mixed ... elements})"
+    }
+  },
+  {
+    "get_weak_flag": {
+      "prefix": "get_weak_flag",
+      "body": "get_weak_flag(${1:array|mapping|multiset m})"
+    }
+  },
+  {
+    "get_profiling_info": {
+      "prefix": "get_profiling_info",
+      "body": "get_profiling_info(${1:program prog})"
+    }
+  },
+  {
+    "acosh": {
+      "prefix": "acosh",
+      "body": "acosh(${1:float arg})"
+    }
+  },
+  {
+    "Roxen.http_encode_url": {
+      "prefix": "Roxen.http_encode_url",
+      "body": "Roxen.http_encode_url(${1:string url})"
+    }
+  },
+  {
+    "utf8_to_string": {
+      "prefix": "utf8_to_string",
+      "body": "utf8_to_string(${1:string str})"
+    }
+  },
+  {
+    "search": {
+      "prefix": "search",
+      "body": "search(${1:mixed haystack}, ${2:mixed needle}${3:, mixed|void start})"
+    }
+  },
+  {
+    "gethostbyname": {
+      "prefix": "gethostbyname",
+      "body": "gethostbyname(${1:string hostname})"
+    }
+  },
+  {
+    "__AUTO_BIGNUM__": {
+      "prefix": "__AUTO_BIGNUM__",
+      "body": "__AUTO_BIGNUM__"
+    }
+  },
+  {
+    "int2hex": {
+      "prefix": "int2hex",
+      "body": "int2hex(${1:int n})"
+    }
+  },
+  {
+    "combine_path_nt": {
+      "prefix": "combine_path_nt",
+      "body": "combine_path_nt(${1:string path}, ${2:string ... paths})"
+    }
+  },
+  {
+    "hash": {
+      "prefix": "hash",
+      "body": "hash(${1:string s}${2:, void|int max})"
+    }
+  },
+  {
+    "errno": {
+      "prefix": "errno",
+      "body": "errno()"
+    }
+  },
+  {
+    "public": {
+      "prefix": "public",
+      "body": "public ${1}"
+    }
+  },
+  {
+    "write": {
+      "prefix": "write",
+      "body": "write(\"${1:format}\\n\"${2:, ${3:mixed ... args}});"
+    }
+  },
+  {
+    "cpp": {
+      "prefix": "cpp",
+      "body": "cpp(${1:string data}, ${2:mapping|string|void current_file}, ${3:int|string|void charset}, ${4:object|void handler}, ${5:void|int compat_major}, ${6:void|int compat_minor}, ${7:void|int picky_cpp})"
+    }
+  },
+  {
+    "acos": {
+      "prefix": "acos",
+      "body": "acos(${1:float arg})"
+    }
+  },
+  {
+    "geteuid": {
+      "prefix": "geteuid",
+      "body": "geteuid()"
+    }
+  },
+  {
+    "enumerate": {
+      "prefix": "enumerate",
+      "body": "enumerate(${1:int n}${2:, void|mixed step}${3:, void|mixed start}${4:, void|function(:void) operator})"
+    }
+  },
+  {
+    "get_iterator": {
+      "prefix": "get_iterator",
+      "body": "get_iterator(${1:object|array|mapping|multiset|string data})"
+    }
+  },
+  {
+    "max": {
+      "prefix": "max",
+      "body": "max(${1:mixed args}${2:, ${3:mixed more}})"
+    }
+  },
+  {
+    "gethrtime": {
+      "prefix": "gethrtime",
+      "body": "gethrtime(${1:void|int nsec})"
+    }
+  },
+  {
+    "__MAJOR__": {
+      "prefix": "__MAJOR__",
+      "body": "__MAJOR__"
+    }
+  },
+  {
+    "remove_call_out": {
+      "prefix": "remove_call_out",
+      "body": "remove_call_out(${1:function(:void) f}, ${2:float|int delay}${3:, ${4:mixed ... args}})"
+    }
+  },
+  {
+    "m_delete": {
+      "prefix": "m_delete",
+      "body": "m_delete(${1:mapping}, ${2:mixed key})"
+    }
+  },
+  {
+    "get_dir": {
+      "prefix": "get_dir",
+      "body": "get_dir(${1:void|string dirname})"
+    }
+  },
+  {
+    "cosh": {
+      "prefix": "cosh",
+      "body": "cosh(${1:int|float f})"
+    }
+  },
+  {
+    "get_active_compilation_handler": {
+      "prefix": "get_active_compilation_handler",
+      "body": "get_active_compilation_handler()"
+    }
+  },
+  {
+    "column": {
+      "prefix": "column",
+      "body": "column(${1:array data}, ${2:mixed index})"
+    }
+  },
+  {
+    "constant": {
+      "prefix": "constant",
+      "body": "constant ${1}"
+    }
+  },
+  {
+    "localtime": {
+      "prefix": "localtime",
+      "body": "localtime(${1:int timestamp})"
+    }
+  },
+  {
+    "gc": {
+      "prefix": "gc",
+      "body": "gc()"
+    }
+  },
+  {
+    "get_all_groups": {
+      "prefix": "get_all_groups",
+      "body": "get_all_groups()"
+    }
+  },
+  {
+    "delay": {
+      "prefix": "delay",
+      "body": "delay(${1:int|float s})"
+    }
+  },
+  {
+    "object_program": {
+      "prefix": "object_program",
+      "body": "object_program(${1:this})"
+    }
+  },
+  {
+    "__FILE__": {
+      "prefix": "__FILE__",
+      "body": "__FILE__"
+    }
+  },
+  {
+    "callablep": {
+      "prefix": "callablep",
+      "body": "callablep(${1:mixed arg})"
+    }
+  },
+  {
+    "__NT__": {
+      "prefix": "__NT__",
+      "body": "__NT__"
+    }
+  },
+  {
+    "chmod": {
+      "prefix": "chmod",
+      "body": "chmod(${1:string path}, ${2:int mode})"
+    }
+  },
+  {
+    "getegid": {
+      "prefix": "getegid",
+      "body": "getegid(${1:int gid})"
+    }
+  },
+  {
+    "add_include_path": {
+      "prefix": "add_include_path",
+      "body": "add_include_path(${1:string tmp})"
+    }
+  },
+  {
+    "normalize_path": {
+      "prefix": "normalize_path",
+      "body": "normalize_path(${1:string path})"
+    }
+  },
+  {
+    "private": {
+      "prefix": "private",
+      "body": "private ${1}"
+    }
+  },
+  {
+    "intp": {
+      "prefix": "intp",
+      "body": "intp(${1:mixed arg})"
+    }
+  },
+  {
+    "filesystem_stat": {
+      "prefix": "filesystem_stat",
+      "body": "filesystem_stat(${1:string path})"
+    }
+  },
+  {
+    "crypt": {
+      "prefix": "crypt",
+      "body": "crypt(${1:string password_or_typed_password}${2:, string crypted_password})"
+    }
+  },
+  {
+    "__MINOR__": {
+      "prefix": "__MINOR__",
+      "body": "__MINOR__"
+    }
+  },
+  {
+    "cd": {
+      "prefix": "cd",
+      "body": "cd(${1:string path})"
+    }
+  },
+  {
+    "call_out_info": {
+      "prefix": "call_out_info",
+      "body": "call_out_info()"
+    }
+  },
+  {
+    "asinh": {
+      "prefix": "asinh",
+      "body": "asinh(${1:int|float f})"
+    }
+  },
+  {
+    "this_program": {
+      "prefix": "this_program",
+      "body": "this_program"
+    }
+  },
+  {
+    "innetgr": {
+      "prefix": "innetgr",
+      "body": "innetgr(${1:string netgroup}${2:, string|void machine}${3:, string|void user}${4:, string|void domain})"
+    }
+  },
+  {
+    "compile_file": {
+      "prefix": "compile_file",
+      "body": "compile_file(${1:string filename}, ${2:object|void handler}, ${3:void|program p}, ${4:void|object o})"
+    }
+  },
+  {
+    "gmtime": {
+      "prefix": "gmtime",
+      "body": "gmtime(${1:int timestamp})"
+    }
+  },
+  {
+    "chroot": {
+      "prefix": "chroot",
+      "body": "chroot"
+    }
+  },
+  {
+    "add_program_path": {
+      "prefix": "add_program_path",
+      "body": "add_program_path(${1:string tmp})"
+    }
+  },
+  {
+    "mkmultiset": {
+      "prefix": "mkmultiset",
+      "body": "mkmultiset(${1:array a})"
+    }
+  },
+  {
+    "all_constants": {
+      "prefix": "all_constants",
+      "body": "all_constants()"
+    }
+  },
+  {
+    "glob": {
+      "prefix": "glob",
+      "body": "glob(${1:string|array(string) glob}, ${2:string|array(string) str})"
+    }
+  },
+  {
+    "kill": {
+      "prefix": "kill",
+      "body": "kill(${1:int pid}, ${2:int signal})"
+    }
+  },
+  {
+    "ceil": {
+      "prefix": "ceil",
+      "body": "ceil(${1:float f})"
+    }
+  },
+  {
+    "asin": {
+      "prefix": "asin",
+      "body": "asin(${1:int|float f})"
+    }
+  },
+  {
+    "Stdio.exist": {
+      "prefix": "Stdio.exist",
+      "body": "Stdio.exist(${1:string filename})"
+    }
+  },
+  {
+    "getppid": {
+      "prefix": "getppid",
+      "body": "getppid()"
+    }
+  },
+  {
+    "getenv": {
+      "prefix": "getenv",
+      "body": "getenv(${1:string|void env})"
+    }
+  },
+  {
+    "removexattr": {
+      "prefix": "removexattr",
+      "body": "removexattr(${1:string file}, ${2:string attr}${3:, ${4:void|bool symlink}})"
+    }
+  },
+  {
+    "destructedp": {
+      "prefix": "destructedp",
+      "body": "destructedp(${1:mixed arg})"
+    }
+  },
+  {
+    "auto": {
+      "prefix": "auto",
+      "body": "auto ${1}"
+    }
+  },
+  {
+    "upper_case": {
+      "prefix": "upper_case",
+      "body": "upper_case(${1:string s})"
+    }
+  },
+  {
+    "sprintf": {
+      "prefix": "sprintf",
+      "body": "sprintf(\"${1:format}\\n\"${2:, ${3:mixed ... args}})"
+    }
+  },
+  {
+    "destruct": {
+      "prefix": "destruct",
+      "body": "destruct(${1:void|object o})"
+    }
+  },
+  {
+    "__LINE__": {
+      "prefix": "__LINE__",
+      "body": "__LINE__"
+    }
+  },
+  {
+    "allocate": {
+      "prefix": "allocate",
+      "body": "allocate(${1:int size}${2:, mixed init})"
+    }
+  },
+  {
+    "encode_value": {
+      "prefix": "encode_value",
+      "body": "encode_value(${1:mixed value}${2:, Codec|void codec})"
+    }
+  },
+  {
+    "getcwd": {
+      "prefix": "getcwd",
+      "body": "getcwd()"
+    }
+  },
+  {
+    "describe_backtrace": {
+      "prefix": "describe_backtrace",
+      "body": "describe_backtrace(${1:mixed trace}${2:, void|int linewidth})"
+    }
+  },
+  {
+    "floatp": {
+      "prefix": "floatp",
+      "body": "floatp(${1:mixed val})"
+    }
+  },
+  {
+    "has_value": {
+      "prefix": "has_value",
+      "body": "has_value(${1:mixed haystack}, ${2:mixed needle})"
+    }
+  },
+  {
+    "get_backtrace": {
+      "prefix": "get_backtrace",
+      "body": "get_backtrace(${1:object|array err})"
+    }
+  },
+  {
+    "getpgrp": {
+      "prefix": "getpgrp",
+      "body": "getpgrp(${1:int|void pid})"
+    }
+  },
+  {
+    "master": {
+      "prefix": "master",
+      "body": "master()"
+    }
+  },
+  {
+    "random": {
+      "prefix": "random",
+      "body": "random(${1:int max})"
+    }
+  },
+  {
+    "floor": {
+      "prefix": "floor",
+      "body": "floor(${1:float|int f})"
+    }
+  },
+  {
+    "explode_path": {
+      "prefix": "explode_path",
+      "body": "explode_path(${1:string p})"
+    }
+  },
+  {
+    "call_function": {
+      "prefix": "call_function",
+      "body": "call_function(${1:function(:void) fun}, ${2:mixed ... args})"
+    }
+  },
+  {
+    "combine_path": {
+      "prefix": "combine_path",
+      "body": "combine_path(${1:string path}, ${2:string ... paths})"
+    }
+  },
+  {
+    "replace": {
+      "prefix": "replace",
+      "body": "replace(${1:string data}, ${2:string from}, ${3:string to})"
+    }
+  },
+  {
+    "__PIKE__": {
+      "prefix": "__PIKE__",
+      "body": "__PIKE__"
+    }
+  },
+  {
+    "alarm": {
+      "prefix": "alarm",
+      "body": "alarm(${1:int seconds})"
+    }
+  },
+  {
+    "undefinedp": {
+      "prefix": "undefinedp",
+      "body": "undefinedp(${1:mixed val})"
+    }
+  },
+  {
+    "getxattr": {
+      "prefix": "getxattr",
+      "body": "getxattr(${1:string file}, ${2:string attr}${3:, void|bool symlink})"
+    }
+  },
+  {
+    "gethostname": {
+      "prefix": "gethostname",
+      "body": "gethostname()"
+    }
+  },
+  {
+    "encode_value_canonic": {
+      "prefix": "encode_value_canonic",
+      "body": "encode_value_canonic(${1:mixed value}${2:, Codec|void codec})"
+    }
+  },
+  {
+    "get_active_error_handler": {
+      "prefix": "get_active_error_handler",
+      "body": "get_active_error_handler()"
+    }
+  },
+  {
+    "find_call_out": {
+      "prefix": "find_call_out",
+      "body": "find_call_out(${1:mixed|function(:void) id_or_func})"
+    }
+  },
+  {
+    "exece": {
+      "prefix": "exece",
+      "body": "exece(${1:string file}, ${2:array(string) args}${3:, void|mapping(string:string) env})"
+    }
+  },
+  {
+    "atan2": {
+      "prefix": "atan2",
+      "body": "atan2(${1:int|float f1}, ${2:int|float f2})"
+    }
+  },
+  {
+    "UNDEFINED": {
+      "prefix": "UNDEFINED",
+      "body": "UNDEFINED"
+    }
+  },
+  {
+    "trim_all_whites": {
+      "prefix": "trim_all_whites",
+      "body": "String.trim_all_whites(${1:mixed val})"
+    }
+  },
+  {
+    "functionp": {
+      "prefix": "functionp",
+      "body": "functionp(${1:mixed val})"
+    }
+  },
+  {
+    "__amigaos__": {
+      "prefix": "__amigaos__",
+      "body": "__amigaos__"
+    }
+  },
+  {
+    "__func__": {
+      "prefix": "__func__",
+      "body": "__func__"
+    }
+  },
+  {
+    "get_groups_for_user": {
+      "prefix": "get_groups_for_user",
+      "body": "get_groups_for_user(${1:int|string user})"
+    }
+  },
+  {
+    "get_all_users": {
+      "prefix": "get_all_users",
+      "body": "get_all_users()"
+    }
+  },
+  {
+    "optional": {
+      "prefix": "optional",
+      "body": "optional ${1}"
+    }
+  },
+  {
+    "is_absolute_path": {
+      "prefix": "is_absolute_path",
+      "body": "is_absolute_path(${1:string p})"
+    }
+  },
+  {
+    "chown": {
+      "prefix": "chown",
+      "body": "chown"
+    }
+  },
+  {
+    "function_program": {
+      "prefix": "function_program",
+      "body": "function_program(${1:function(:void) f})"
+    }
+  },
+  {
+    "exp": {
+      "prefix": "exp",
+      "body": "exp(${1:float|int f})"
+    }
+  },
+  {
+    "random_string": {
+      "prefix": "random_string",
+      "body": "random_string(${1:int length})"
+    }
+  },
+  {
+    "closelog": {
+      "prefix": "closelog",
+      "body": "closelog"
+    }
+  },
+  {
+    "Protocols.HTTP.Query": {
+      "prefix": "Protocols.HTTP.Query",
+      "body": "Protocols.HTTP.Query"
+    }
+  },
+  {
+    "copy_value": {
+      "prefix": "copy_value",
+      "body": "copy_value(${1:mixed value})"
+    }
+  },
+  {
+    "indices": {
+      "prefix": "indices",
+      "body": "indices(${1:string|array|mapping|multiset|object x})"
+    }
+  },
+  {
+    "getpid": {
+      "prefix": "getpid",
+      "body": "getpid()"
+    }
+  },
+  {
     "Create method": {
       "prefix": "func",
       "body": [

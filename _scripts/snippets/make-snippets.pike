@@ -20,6 +20,22 @@ int main(int argc, array(string) argv)
       continue;
     }
 
+    if (m["is-auto-completion"]) {
+      m_delete(m, "is-auto-completion");
+      foreach (m; string key; string val) {
+        mapping mm = ([
+          key :  ([
+            "prefix": key,
+            "body": val
+          ])
+        ]);
+
+        out += ({ mm });
+      }
+
+      continue;
+    }
+
     if (has_value(m->body, "\n")) {
       m->body = String.trim_all_whites(m->body) / "\n";
     }
