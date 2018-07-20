@@ -34,6 +34,38 @@
   "auto"              : "auto ${1}",
   "optional"          : "optional ${1}",
 
+  /* Types */
+  "bool"     : "bool",
+  "int"      : "int",
+  "float"    : "float",
+  "string"   : "string",
+  "array"    : "array",
+  "mapping"  : "mapping",
+  "multiset" : "multiset",
+  "object"   : "object",
+  "program"  : "program",
+  "function" : "function",
+  "mixed"    : "mixed",
+  "void"     : "void",
+  "enum"     : "enum ",
+  "auto"     : "auto ",
+  "typedef"  : "typedef ",
+  "class"    : "class ",
+  "constant" : "constant ",
+
+  /* Control flow */
+  "return"   : "return",
+  "continue" : "continue",
+  "break"    : "break",
+  "case"     : "case ${1:what}:",
+  "default"  : "default: ",
+  "goto"     : "goto ${1:label}",
+  "inherit"  : "inherit ${1:What}",
+  "import"   : "import ${1:What}",
+
+  /* Other */
+  "include"   : "#include ${1:<${2:What}>}",
+
   /* Built-in functions */
   "abs": "abs(${1:float|int|object arg})",
   "access": "access(${1:string path}, ${2:string|void mode})",
@@ -62,7 +94,6 @@
   "backtrace":"backtrace()",
   "basename":"basename(${1:string path})",
   "basetype":"basetype(${1:mixed value})",
-  "bool":"bool",
 
   "call_function":"call_function(${1:function(:void) fun}, ${2:mixed ... args})",
   "call_out": "call_out(${1:function f}, ${2:float|int delay}, ${3:void|mixed ... args});",
