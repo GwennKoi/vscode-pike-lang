@@ -1,15 +1,26 @@
 {
   "name": "vscode-pike-lang",
   "displayName": "Pike Language",
-  "description": "Pike Language syntax highlighting",
-  "version": "0.1.0",
+  "description": "Pike Language syntax highlighting and snippets",
+  "version": "0.2.0",
   "publisher": "undeadfish",
   "engines": {
     "vscode": "^1.16.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages", 
+    "Snippets"
   ],
+  "keywords": [
+    "pike",
+    "pmod",
+    "lpc",
+    "programming language"
+  ],
+  "icon": "images/pike_logo.png",
+  "author": {
+    "name": "Gregg Reece"
+  },
   "homepage": "https://github.com/undeadfish/vscode-pike-lang/blob/master/README.md",
   "repository": {
     "type": "git",
